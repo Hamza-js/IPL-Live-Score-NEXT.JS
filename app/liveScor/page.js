@@ -4,7 +4,7 @@ const liveScor = () => {
   return (
     <div className="h-screen w-screen bg-[#F5F5F5] justify-center flex items-center">
       <div className="flex items-center flex-col max-w-[700px]  w-full h-full bg-white">
-        <div className="h-[50px] w-full bg-purple-700 text-white flex items-center justify-center font-bold text-lg">
+      <div className="h-[60px] sm:h-[50px] w-full bg-white shadow-sm text-black flex items-center justify-center font-bold text-lg">
           <p>Live Scores</p>
         </div>
         <div className="px-5 pt-4 font-semibold text-black flex flex-col justify-center items-center w-full sm:w-[550px]">
