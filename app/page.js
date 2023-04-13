@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="h-screen w-screen bg-[#F5F5F5] justify-center flex items-center">
       <div className="flex justify-start items-center  flex-col max-w-[400px] border-[1px] border-gray-100 w-full h-full bg-white">
-        <div className="h-[60px] sm:h-[50px] w-full bg-white shadow-sm text-black flex items-center justify-center font-bold text-lg">
+        <div className="h-[60px] sm:h-[50px] w-full bg-purple-600 shadow-sm text-white flex items-center justify-center font-bold text-lg">
           <p>Indian Premier League 2023</p>
         </div>
         <div className="px-8 mt-10 flex justify-start items-center w-full flex-col">

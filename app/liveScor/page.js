@@ -4,7 +4,7 @@ const liveScor = () => {
   return (
     <div className="h-screen w-screen bg-[#F5F5F5] justify-center flex items-center">
       <div className="flex items-center flex-col max-w-[700px]  w-full h-full bg-white">
-      <div className="h-[60px] sm:h-[50px] w-full bg-white shadow-sm text-black flex items-center justify-center font-bold text-lg">
+      <div className="h-[60px] sm:h-[50px] w-full bg-purple-600 shadow-sm text-white flex items-center justify-center font-bold text-lg">
           <p>Live Scores</p>
         </div>
         <div className="px-8 pt-8 font-semibold text-black flex flex-col justify-center items-center w-full sm:w-[550px]">
@@ -20,11 +20,11 @@ const liveScor = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <p className="text-black text-xl font-normal hover:underline hover:cursor-pointer">
+            <p className="text-black text-lg font-normal hover:underline hover:cursor-pointer">
                 Rajasthan Royals
               </p>
-              <p className="text-black text-lg font-semibold">187/5</p>
-              <p className="text-black text-[13px] font-medium">(19.4)</p>
+              <p className="text-black text-xl font-normal">187/5</p>
+              <p className="text-black text-[10px] font-normal">(19.4)</p>
             </div>
           </div>
 
