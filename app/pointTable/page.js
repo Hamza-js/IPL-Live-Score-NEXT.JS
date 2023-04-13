@@ -43,13 +43,13 @@ const pointTable = async () => {
                     Team
                   </th>
                   <th className="w-1/6 py-2 px-4 border border-gray-300">
-                    Matches Played
+                    Played
                   </th>
                   <th className="w-1/6 py-2 px-4 border border-gray-300">
-                    Matches Won
+                    Won
                   </th>
                   <th className="w-1/6 py-2 px-4 border border-gray-300">
-                    Matches Lost
+                    Lost
                   </th>
                   <th className="w-1/6 py-2 px-4 border border-gray-300">
                     Points
@@ -68,19 +68,19 @@ const pointTable = async () => {
                     <td className="py-2 px-4 border border-gray-300">
                       {team.teamName}
                     </td>
-                    <td className="py-2 px-4 border border-gray-300">
+                    <td className="py-2 text-center px-4 border border-gray-300">
                       {team.matchesPlayed}
                     </td>
-                    <td className="py-2 px-4 border border-gray-300">
-                      {team.matchesWon}
+                    <td className="py-2 text-center px-4 border border-gray-300">
+                      {`${team.matchesWon != null ? team.matchesWon : 0}`}
                     </td>
-                    <td className="py-2 px-4 border border-gray-300">
+                    <td className="py-2 text-center px-4 border border-gray-300">
                       {team.matchesLost}
                     </td>
-                    <td className="py-2 px-4 border border-gray-300">
-                      {team.points}
+                    <td className="py-2 text-center px-4 border border-gray-300">
+                      {`${team.points != null ? team.points : 0}`}
                     </td>
-                    <td className="py-2 px-4 border border-gray-300">
+                    <td className="py-2 text-center px-4 border border-gray-300">
                       {team.nrr}
                     </td>
                   </tr>
