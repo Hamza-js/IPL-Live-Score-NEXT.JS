@@ -32,10 +32,10 @@ const pointTable = async () => {
         <div className="h-[60px] sm:h-[50px] w-full bg-purple-600 shadow-sm text-white flex items-center justify-center font-bold text-lg">
           <p>Point Table</p>
         </div>
-        <div className="px-8 pt-8 font-semibold text-black flex flex-col justify-center items-center w-full sm:w-[550px]">
+        <div className="px-0 pt-8 font-semibold text-black flex flex-col justify-center items-center w-full sm:w-[550px]">
           <p>Indian Premier League 2023</p>
 
-          <div className="border-red-500 w-full ">
+          <div className=" w-full ">
             <table className="w-full table-fixed border-collapse border border-gray-300">
               <thead>
                 <tr className="bg-gray-100">
