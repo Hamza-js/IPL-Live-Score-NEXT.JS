@@ -1,4 +1,3 @@
-import { baseURL } from "@<components>/lib/baseURL";
 
 async function getData() {
   const res = await fetch(

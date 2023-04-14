@@ -83,7 +83,7 @@ const liveScor = async () => {
               {`${apiRes.matchInfo.status}`}
             </p>
             <p className="text-gray-500 text-[12px] font-light hover:underline hover:cursor-pointer">
-              {`${apiRes.matchInfo.matchFormat} ${apiRes.matchInfo.matchDesc} of 70`}
+              {`${apiRes.matchInfo.matchFormat} ${apiRes.matchInfo.matchDesc}`}
             </p>
           </div>
         </div>
