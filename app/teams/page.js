@@ -2,7 +2,12 @@ import Link from "next/link";
 
 async function getData() {
   const res = await fetch(
-    `https://1e57-160-202-38-28.ngrok-free.app/api/ipl/points-table`,
+    `https://c621-160-202-38-214.ngrok-free.app/api/ipl/points-table`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    },
     {
       headers: {
         accept: "application/json", // Specify the expected media type for the response
@@ -37,7 +42,10 @@ const teams = async () => {
 
           <div className="w-full justify-center items-center flex-col flex">
             {apiRes.map((team, index) => (
-              <div key={index} className="w-1/3 flex justify-center items-center pt-4">
+              <div
+                key={index}
+                className="flex justify-center items-center pt-2 w-1/2"
+              >
                 <Link
                   href={`/teams/${team.teamId}`}
                   className="text-white w-full bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 sm:py-3 py-5 mx-5 sm:max-w-[300px] text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"

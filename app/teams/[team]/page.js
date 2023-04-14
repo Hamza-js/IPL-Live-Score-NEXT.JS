@@ -3,7 +3,12 @@ import Link from "next/link";
 const team = async ({ params }) => {
   async function getData() {
     const res = await fetch(
-      `https://1e57-160-202-38-28.ngrok-free.app/api/ipl/team-detail/${params.team}`,
+      `https://c621-160-202-38-214.ngrok-free.app/api/ipl/team-detail/${params.team}`,
+      {
+        next: {
+          revalidate: 60,
+        },
+      },
       {
         headers: {
           accept: "application/json", // Specify the expected media type for the response

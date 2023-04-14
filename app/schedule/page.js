@@ -1,18 +1,17 @@
 async function getData() {
   const res = await fetch(
-    `https://1e57-160-202-38-28.ngrok-free.app/api/ipl/match-schedules`,
+    `https://c621-160-202-38-214.ngrok-free.app/ipl/match-schedules`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    },
     {
       headers: {
         accept: "application/json", // Specify the expected media type for the response
       },
     }
   );
-
-  if (!res.ok) {
-    throw new Error(
-      `Failed to fetch data. Status: ${res.status} ${res.statusText}`
-    );
-  }
 
   // Parse the response as JSON
   return res.json();

@@ -4,7 +4,12 @@ import Link from "next/link";
 const player = async ({ params }) => {
   async function getData() {
     const res = await fetch(
-      `https://1e57-160-202-38-28.ngrok-free.app/api/ipl/player-profile/${params.player}`,
+      `https://c621-160-202-38-214.ngrok-free.app/api/ipl/player-profile/${params.player}`,
+      {
+        next: {
+          revalidate: 60,
+        },
+      },
       {
         headers: {
           accept: "application/json", // Specify the expected media type for the response
@@ -39,8 +44,8 @@ const player = async ({ params }) => {
             width={50}
             style={{
               objectFit: "contain",
-              height: 80,
-              width: 80,
+              height: 100,
+              width: 100,
               marginBottom: 20,
             }}
           />
@@ -54,16 +59,16 @@ const player = async ({ params }) => {
               <p>Test Bat Rank</p>
               <p>ODI Bat Rank</p>
 
-              <p>T20 Bowl Rank</p>
-
-              <p>Test Bat Rank</p>
-
-              <p>ODI Bat Rank</p>
               <p>T20 Bat Rank</p>
+
+              <p>Test Bowl Rank</p>
+
+              <p>ODI Bowl Rank</p>
+              <p>T20 Bowl Rank</p>
             </div>
             <div className="w-1/2 flex gap-1 flex-col">
-              <p>{apiRes.birthPlace}</p>
               <p>{apiRes.nickName}</p>
+              <p>{apiRes.birthPlace}</p>
               <p>{apiRes.role}</p>
               <p>{apiRes.intlTeam}</p>
               <p>{apiRes.currRank.bat.testBestRank}</p>
