@@ -1,6 +1,6 @@
 async function getData() {
   const res = await fetch(
-    `https://c621-160-202-38-214.ngrok-free.app/ipl/match-schedules`,
+    `https://c621-160-202-38-214.ngrok-free.app/api/ipl/match-schedules`,
     {
       next: {
         revalidate: 60,
